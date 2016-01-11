@@ -1,0 +1,6 @@
+{{#each items as |item|}}
+	<div class="input-checkbox" {{action "isCheck"}}>
+		<input type="checkbox" name={{name}}>
+		<label>{{item}}</label>
+	</div>
+{{/each}}
