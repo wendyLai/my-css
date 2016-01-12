@@ -1,2 +1,5 @@
-<input type="radio" placeholder="input-radio" name="gender">男
-<input type="radio" placeholder="input-radio" name="gender">女
+<div class="input-radio" onclick={{action "isCheck"}} onmouseover={{action "overCss"}} onmouseout={{action "outCss"}}>
+	<input type="radio" name={{name}}>
+	<span></span>
+	<label>{{label}}</label>
+</div>

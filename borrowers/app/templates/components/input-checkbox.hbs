@@ -1,6 +1,5 @@
-{{#each items as |item|}}
-	<div class="input-checkbox" {{action "isCheck"}}>
-		<input type="checkbox" name={{name}}>
-		<label>{{item}}</label>
-	</div>
-{{/each}}
+<div class="input-checkbox" onclick={{action "isCheck"}} onmouseover={{action "overCss"}} onmouseout={{action "outCss"}}>
+	<input type="checkbox" name={{name}}>
+	<span></span>
+	<label>{{label}}</label>
+</div>

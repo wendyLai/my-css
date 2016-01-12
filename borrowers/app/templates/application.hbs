@@ -1,12 +1,29 @@
-<p>***********************input**************************</p>
+<p>***********************input-text********************************</p>
 
 {{input-text icon="icon-user inset"}}
-<p>***********************input**************************</p>
-{{input-password icon=true}}
-<p>***********************input**************************</p>
-{{input-checkbox label="apple,orange,banana,pear" name="fruit"}}
-<p>***********************input**************************</p>
-{{input-radio}}
 
+<p>***********************input-password**************************</p>
+
+{{input-password icon=true}}
+
+<p>***********************input-checkbox**************************</p>
+
+<div class="input-checkbox-box">
+	{{input-checkbox label="apple" name="fruit"}}
+	{{input-checkbox label="orange" name="fruit"}}
+	{{input-checkbox label="banana" name="fruit"}}
+	{{input-checkbox label="pear" name="fruit"}}
+</div>
+
+<p>***********************input-toggle*****************************</p>
+
+{{input-toggle label-left="off" label-right="on"}}
+
+<p>***********************input-radio******************************</p>
+
+<div class="input-radio-box">
+	{{input-radio label="女" name="gender"}}
+	{{input-radio label="男" name="gender"}}
+</div>
 
 {{outlet}}
